@@ -9,6 +9,7 @@ import Frutas from './components/Frutas'
 import FrutasFuncion from './components/FrutasFuncion'
 import RickyMorty from './components/RickyMorty'
 import RickyMortyFn from './components/RickyMortyFn'
+import UserList from './components/UserList'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
@@ -43,6 +44,9 @@ function App() {
             <Link to="/rickymortyfn">Rick & Morty Función</Link>
           </li>
           <li>
+            <Link to="/userlist">User List</Link>
+          </li>
+          <li>
             <Link to="/no-existe">No existe</Link>
           </li>
         </ul>
@@ -60,6 +64,7 @@ function App() {
         <Route path="/frutasfuncion" element={<FrutasFuncion />} />
         <Route path="/rickymorty" element={<RickyMorty />} />
         <Route path="/rickymortyfn" element={<RickyMortyFn />} />
+        <Route path="/userlist" element={<UserList />} />
         <Route path="*" element={<Notfound />} />
         
 
